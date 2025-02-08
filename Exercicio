@@ -80,6 +80,86 @@ System.out.printf("Number = %d %n SALARY + U$ %.2f",Func,resultado);
 	
 	
 	sc.close();
+//-------------------------------------------------------
+//Verificar se o numero e impar ou par----------------------
+
+	Locale.setDefault(Locale.US);
+	Scanner  sc = new Scanner(System.in);
+
+int x = sc.nextInt();
+	
+	if(x < 0) {
+		System.out.println("negativo");
+		
+	}else {
+		System.out.println("Positivo");
+	}
+sc.close();
+//------------------------------------------
+//Verificar se e Par ou Impart
+
+		Locale.setDefault(Locale.US);
+	Scanner  sc = new Scanner(System.in);
+
+	int x = sc.nextInt();
+	
+	if(x %2 == 0) {
+		System.out.println("Par");
+	}else  {
+		System.out.println("Impar");
+	}
+	sc.close();
+//=--------------------------------------
+//Verifica rse são multiplos ou não 
+		Locale.setDefault(Locale.US);
+	Scanner  sc = new Scanner(System.in);
+
+	int n1 , n2, resultado;
+	
+	
+	System.out.println("Digite um numero");
+	n1 = sc.nextInt();
+	System.out.println("Digite outro numero numero");
+	n2 = sc.nextInt();
+	if(n1 %n2 == 0 ) {
+		System.out.println("São Multiplos");
+		}else if(n2 %n1 == 0) {
+			System.out.println("São Multiplos");
+		} else {
+			System.out.println("Não são Multiplos");
+		}
+	
+	sc.close();
+//---------------------------------------------
+//Exercicio para querificar em qual quadrante o ponto se localiza no Eixos Cartesianos
+	Locale.setDefault(Locale.US);
+	Scanner  sc = new Scanner(System.in);
+
+	double n1,n2;
+	
+System.out.println("Digite o numero do Eixo X");
+n1 = sc.nextDouble();
+	System.out.println("Digite o numero do Eixo Y");
+n2 = sc.nextDouble();
+
+  if(n1 > 0 && n2 > 0 ) {
+	  System.out.println("Q1");
+	  }else if(n1 < 0 && n2 > 0) {
+		  System.out.println("Q2");
+	   }else if(n1 < 0 && n2 < 2 ) {
+		   System.out.println("Q3");
+	    }else if(n1 > 0 && n2 < 0) {
+		    System.out.println("Q4");
+	     }else {
+	    	 System.out.println("Origem");
+	     }
+  
+	sc.close();
+//---------------------------------------------------------  
+
+
+
+
 	}
 	
 
